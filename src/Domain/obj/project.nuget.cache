@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OOpFPF+Sh+j4jxvpIgxuqj4uftA4dDkL4ACM/hN+5uZt15Dc+KS2wfpD1/8iQbRn6vKqmAILv71NUHku2ES6BA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sskorkovic\\Documents\\Projekti\\RedCross-VMS\\src\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sskorkovic\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\sskorkovic\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

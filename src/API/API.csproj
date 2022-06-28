@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Application\Application.csproj" />
+		<ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.0.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Docker\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\.dockerignore" Link="Docker\.dockerignore" />
+	  <None Include="..\..\docker-compose.yml" Link="Docker\docker-compose.yml" />
+	  <None Include="..\..\Dockerfile" Link="Docker\Dockerfile" />
+	</ItemGroup>
+
+</Project>
+
