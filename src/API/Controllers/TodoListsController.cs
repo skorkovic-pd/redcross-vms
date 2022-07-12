@@ -10,5 +10,11 @@ namespace API.Controllers
         {
             return await Mediator.Send(new GetTodosQuery());
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TodosVm>> GetQueryById(int id)
+        {
+            return await Mediator.Send(new GetTodosQuery());
+        }
     }
 }
