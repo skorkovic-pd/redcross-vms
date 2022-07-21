@@ -1,0 +1,20 @@
+name: Run CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v2
+        with:
+          push: false
+          tags: ${{ github.event.repository.name }}:latest, ${{ github.repository }}:latest
